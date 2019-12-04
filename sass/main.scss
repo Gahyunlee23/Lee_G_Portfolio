@@ -1,0 +1,107 @@
+@import 'vars';
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: nudista-web, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+// Header Section
+.wrapper { overflow: hidden; }
+
+.mainHeader {
+    background-image: url(../images/homeIntro-mobile.png);
+    width: 375px;
+    height: 234px;
+}
+
+#headerLogo { width: 86px; }
+
+.homeText { 
+    font-size: 1.2rem;; 
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+//navbar
+
+#mainNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+#mainNav button { margin-left: auto; }
+
+#burgerCon {
+    display: none;
+    margin-top: 5px;
+  }
+  
+#burgerCon.slideToggle { display: block; }
+
+#mainNav button {
+    background: url(../images/burgerCon.svg);
+    border: 0;
+    width: 35px;
+    height: 35px;
+    transition: all 400ms ease;
+  }
+  
+  #mainNav button.expanded {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  
+    transform: rotate(90deg);
+  }
+  
+  #mainNav li a {
+      text-decoration: none;
+      display: block;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+  }
+  
+  #mainNav li { border-bottom: 1px solid #efefef; }
+  
+  #mainNav li:first-child { border-top: 1px solid #efefef; }
+  
+  #mainNav li:last-child { margin-bottom: 10px; }
+  
+  #mainNav li a:hover { background-color: #efefef; }
+  
+
+// Works Section
+
+#works {
+    margin-top: 100px; 
+    h1 {
+    font-size: 2rem;
+    width: 375px;
+    text-align: center; }
+}
+
+.thumbnails { 
+    max-width: 90%;
+    margin-bottom: 100px; 
+} 
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);}
+    to   { transform: translate3d(0, 200px, 0); }
+}
+
+.project {
+    width: 366px;
+    height: 385px;
+}
+
+.project-p {
+    width: 366px;
+    height: 385px;
+}
+
+
+@import 'modules/tablet.scss';
+@import 'modules/desktop.scss';

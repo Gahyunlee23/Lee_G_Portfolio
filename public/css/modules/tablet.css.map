@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,sCAA0C,CAEtC,WAAY,CACR,gBAAgB,CAAE,qCAAqC,CACvD,iBAAiB,CAAE,SAAS,CAC5B,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CAGjB,SAAU,CACN,KAAK,CAAE,KAAK,CACZ,UAAU,CAAE,MAAM",
+"sources": ["../../../sass/modules/tablet.scss"],
+"names": [],
+"file": "tablet.css"
+}

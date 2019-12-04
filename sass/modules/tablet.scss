@@ -1,0 +1,19 @@
+@import '_vars';
+
+@media screen and (min-width: $bp-tablet) {
+    //header
+    .mainHeader {
+        background-image: url("../images/homeIntro-tablet.png");
+        background-repeat: no-repeat;
+        width: 768px;
+        height: 480px;
+    }
+    // works
+    #works h1 {
+        width: 768px;
+        text-align: center;
+    }
+
+    
+    
+}
