@@ -26,34 +26,52 @@
       <img id="headerLogo" src="images/logo-horizon-whiteT.svg" alt="logo"> 
       <h1 class="homeText">Come Out to New Experiences!</h1>
     </header>
+
+    <section class="about">
+     <a class="photo-me">
+       <img src="images/aboutGahyun.jpg" alt="formal">
+       <img src="images/aboutCasualGa.png" alt="casual">
+     </a>
+      <p>I’m currently studying in the interactive media design at Fanshawe. 
+        I went through many group projects; I have done mostly coding on the group. 
+        I like to work with computers. 
+        When I’m not coding, I usually watch Netflix and read some books. If the weather is good, then I go out and take a walk around the home,
+        but the weather here barely pleasant.</p>
+    </section>
     
     <section id="works">
-      <h1>Works</h1>
-      <div class="thumbnails">
-        <div class="project">
-          <img src="images/thumbnail-bootcamp.png" alt="bootcamp">
-        </div>
-        <div class="project">
-          <img src="images/thumbnail-hackathon.png" alt="hackathon">
-        </div>
-        <div class="project">
-          <img src="images/thumbnail-musicmixer.png" alt="musicmixer">
-        </div>
-     
-        <div class="project">
-          <img src="images/thumbnail-infographic.png" alt="info">
-        </div>
-        <div class="project">
-          <img src="images/thumbnail-photocard.png" alt="photocard">
-        </div>
-        <div class="project">
-          <img src="images/thumbnail-lyricsticker.png" alt="lyricsticker">
-        </div>
-      </div>
+
+        {{{ body }}}
 
     </section>
 
+
+    <h2 class="contact-title">Get in Touch!</h2>
     <section id="contact">
+
+      <form action="data/contact.php" method="post"> 
+      <div class="cName">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="name">
+      </div>
+
+      <div class="cEmail">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="email">
+      </div>
+
+      <div class="cPhone">
+      <label for="subject">Phone</label>
+      <input id="number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="phone">
+      </div>
+
+      <div class="cMessage">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+     </form>
     </section>
 
     <footer class="mainFooter">
@@ -69,8 +87,11 @@
       <a href="https://www.linkedin.com/in/stellalee1119/">
         <img src="images/linkedin.png" alt="linkedin">
       </a>
+
+      <a id="to-top" href="#">back to top</a>
     </footer>
-    <script src="js/main.js"></script>
+
+    <script type="module" src="js/main.js"></script>
   </main>
   
 </body>

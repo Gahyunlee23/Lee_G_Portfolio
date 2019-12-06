@@ -1,10 +1,17 @@
-@import 'vars';
+@import '_vars';
+@import 'modules/lightbox';
 
 h1, h2, h3, h4, h5, h6, p, span {
     font-family: nudista-web, sans-serif;
     font-style: normal;
     font-weight: 100;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 
 // Header Section
 .wrapper { overflow: hidden; }
@@ -31,8 +38,6 @@ h1, h2, h3, h4, h5, h6, p, span {
     flex-direction: column;
   }
 
-#mainNav button { margin-left: auto; }
-
 #burgerCon {
     display: none;
     margin-top: 5px;
@@ -46,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 35px;
     height: 35px;
     transition: all 400ms ease;
+    margin: 10px 10px 0 auto;
   }
   
   #mainNav button.expanded {
@@ -63,14 +69,29 @@ h1, h2, h3, h4, h5, h6, p, span {
       text-align: center;
   }
   
-  #mainNav li { border-bottom: 1px solid #efefef; }
-  
-  #mainNav li:first-child { border-top: 1px solid #efefef; }
-  
   #mainNav li:last-child { margin-bottom: 10px; }
   
-  #mainNav li a:hover { background-color: #efefef; }
-  
+  #mainNav li a:hover { background-color: $theme-yellow; }
+
+  // About Section
+  .about {  
+      position: relative;
+      z-index: -1;
+
+      p {
+          width: 280px;
+          font-size: 1rem;
+          margin-top: 100px;
+          z-index: 5000;
+      }
+    }
+
+  .photo-me img:last-child { display: none; }
+
+  .photo-me:hover img:last-child { display: block; }
+
+  .photo-me:hover img:first-child { display: none; }
+
 
 // Works Section
 
@@ -82,10 +103,17 @@ h1, h2, h3, h4, h5, h6, p, span {
     text-align: center; }
 }
 
-.thumbnails { 
-    max-width: 90%;
-    margin-bottom: 100px; 
-} 
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 385px;
+}
+
+.works-panel {
+    flex: 0 1 100%;
+    img { max-width: 100%; }
+}
 
 @keyframes bounce {
     from { transform: translate3d(0, 0, 0);}
@@ -102,6 +130,53 @@ h1, h2, h3, h4, h5, h6, p, span {
     height: 385px;
 }
 
+#contact {
+    width: 374px;
+    height: 499px;
+    background-image: url("../images/contact-image.png")
+}
 
-@import 'modules/tablet.scss';
-@import 'modules/desktop.scss';
+#contact {
+    margin: 0 auto;
+    justify-content:  space-evenly;
+    label {
+        font-size: 1.5rem;
+        font-family: nudista-web, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        padding-left: 7px;
+    }
+    input {
+        background-color: $theme-lightP;
+        border: none;
+        width: 355px;
+        height: 60px;
+        margin: 7px;
+    }
+    textarea {
+        background-color: $theme-lightP;
+        border: none;
+        width: 355px;
+        height: 90px;
+        margin-left: 7px;
+    }
+}
+
+//footer starts here 
+.mainFooter {
+    background-color: $theme-middleP;
+    margin-top: 100px;
+    img { 
+        width: 50px; 
+        padding-left: 15px;
+    }
+}
+
+#to-top { 
+    display: inline-block;
+    left: 1;
+}
+
+
+@import 'modules/tablet';
+@import 'modules/desktop';
