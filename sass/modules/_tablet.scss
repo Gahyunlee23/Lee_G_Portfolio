@@ -1,0 +1,57 @@
+@import '_vars';
+
+@media screen and (min-width: $bp-tablet) {
+    //header
+    .homeText { font-size: 2rem; }
+
+    //about Section Start Here
+    .about { 
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mainNav {
+        display: flex;
+        flex-direction: column;
+      }
+    
+    #burgerCon {
+        display: none;
+        margin-top: 5px;
+      }
+      
+    #burgerCon.slideToggle { display: block; }
+    
+    #mainNav button {
+        background: url(../images/burgerCon.svg);
+        border: 0;
+        width: 35px;
+        height: 35px;
+        transition: all 400ms ease;
+        margin: 10px 10px 0 auto;
+      }
+      
+      #mainNav button.expanded {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+      
+        transform: rotate(90deg);
+      }
+      
+      #mainNav li a {
+          text-decoration: none;
+          display: block;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+      }
+      
+      #mainNav li:last-child { margin-bottom: 10px; }
+      
+      #mainNav li a:hover { background-color: $theme-yellow; }
+     
+    // Works Section Starts Here
+
+    .works-panel { flex: 0 1 350px; }
+    
+}
