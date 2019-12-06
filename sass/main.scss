@@ -94,14 +94,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 // Works Section
-
-#works {
-    margin-top: 100px; 
-    h1 {
+.title {
     font-size: 2rem;
-    width: 375px;
-    text-align: center; }
+    text-align: center;
 }
+
+#works { margin-top: 100px; }
 
 .works {
     display: flex;

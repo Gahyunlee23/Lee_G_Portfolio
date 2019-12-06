@@ -3,7 +3,7 @@ const config = {
     // 8889 for mac
     uname: "bdbd387795abf9",
     pword: "a4fb5764", // leave blank for windows
-    database: "db_portfolio"
+    database: "heroku_0ec88375f530755"
 }
 
 module.exports = config;

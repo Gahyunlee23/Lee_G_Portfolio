@@ -1,0 +1,80 @@
+@import '_vars';
+
+@media screen and (min-width: $bp-desktop) {
+
+  .mainHeader {
+    background-image: url("../images/homeIntro-tablet.png");
+    background-repeat: no-repeat;
+    width: 768px;
+    height: 480px;
+}
+
+    .homeText {
+      text-align: center;
+    }
+
+    #headerLogo { width: 200px; }
+
+    #mainHeader { display: flex; margin-top: 20px; }
+
+    #button { display: none; }
+
+    #burgerCon { display: flex; flex-direction: column; margin: 0; }
+
+    #mainNav {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-left: auto;
+  }
+
+  #burgerMenu { text-align: right; }
+
+  #mainNav li {
+    border-bottom: none;
+    display: inline-block;
+  }
+
+  #mainNav li a {
+    background-color: $theme-purple;
+    display: inline-block;
+
+    padding: 25px 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #mainNav li a:hover {
+    color: #fff;
+    background-color: $theme-yellow;
+    padding: 25px 15;
+  }
+
+  #mainNav li:first-child { border-top: none; }
+
+  #mainNav li:last-child { margin-bottom: 0; }
+
+    //works
+
+
+    .project { max-width: 365px; }
+}
+
+@media screen and (min-width: 75rem) {
+  .wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.mainHeader {
+    background-image: url("../images/homeIntro.png");
+    width: 1280px;
+    height: 800px;
+}
+
+.homeText { 
+  font-size: 4rem; 
+  text-align: center;
+  margin-top: 70px;
+}
+}

@@ -1,0 +1,21 @@
+<div class="works">
+
+    {{#each project}}
+    <div class="works-panel">
+        <h2 class="w-title">{{ Title }}</h2>
+         <a href="{{ID}}" class="w-link">
+            <img src="images/{{Image}}" alt="thumbnail" class="worksImg">
+        </a>
+    </div>
+    {{/each}}
+
+</div>
+
+<section class="lightbox">
+    <span class="close">x</span>
+    <div class="sidebar">
+        <img src="images/{{Image}}" alt="larger bio image">
+    </div>
+    <div class="lb-content"></div>
+</section>
+    
