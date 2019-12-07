@@ -1,6 +1,7 @@
 (() => {
     let button = document.querySelector("#button");
     let burgerCon = document.querySelector("#burgerCon");
+    let aboutImg = document.querySelector('.about-img');
 
 
     function hamburgerMenu() {
@@ -24,6 +25,7 @@
             targetImg = lightBox.querySelector('img');
 
         let projectDetails = `
+            <img class="thumb-img" src="images/${project.Image}">
             <h2>Category: </h2>
             <h3>${project.Category}</h3><br>
             <h3>Description: </h3>
@@ -37,7 +39,6 @@
         `;
 
         targetDiv.innerHTML = projectDetails;
-        targetImg.src = project.currentSrc;
 
         lightBox.classList.add('show-lb');
     }
@@ -46,8 +47,7 @@
         event.preventDefault();
         //debugger;
 
-        let url = `/users/${this.getAttribute('href')}`,
-        currentImg = this.previousElementSibling.querySelector('img');
+        let url = `/users/${this.getAttribute('href')}`;
             
  
         fetch(url)
@@ -56,11 +56,18 @@
                 console.log(data)
               
 
-                data.currentSrc = currentImg;
                 parseProject(data);
             })
 
             .catch(err => console.log(err));
+    }
+
+    function changeAboutImg() {
+        aboutImg.src = "images/aboutCasualGa.png";
+    }
+
+    function changeAboutIng() { 
+        aboutImg.src = "images/aboutGahyun.jpg";
     }
 
     userButtons.forEach(button => button.addEventListener("click", getProjectInfo));
@@ -71,6 +78,7 @@
 
     button.addEventListener("click", hamburgerMenu, false);
 
-    
+    aboutImg.addEventListener("mouseover", changeAboutImg);
+    aboutImg.addEventListener("mouseout", changeAboutIng);
     
 })();

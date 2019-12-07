@@ -86,13 +86,6 @@ h1, h2, h3, h4, h5, h6, p, span {
       }
     }
 
-  .photo-me img:last-child { display: none; }
-
-  .photo-me:hover img:last-child { display: block; }
-
-  .photo-me:hover img:first-child { display: none; }
-
-
 // Works Section
 .title {
     font-size: 2rem;
@@ -127,6 +120,8 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 366px;
     height: 385px;
 }
+
+.contact-img { display: none; }
 
 #contact {
     width: 374px;
