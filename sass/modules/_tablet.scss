@@ -53,5 +53,12 @@
     // Works Section Starts Here
 
     .works-panel { flex: 0 1 350px; }
+
+    .contact-img { display: block; }
     
+    #contact { 
+      background-image: none;
+      display: flex;
+      flex-direction: row;
+    }
 }
