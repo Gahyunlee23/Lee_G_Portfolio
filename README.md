@@ -1,4 +1,4 @@
-![MyLogoImage](public/images/logo-horizon-whiteT.svg "Logo")
+![MyLogoImage](public/images/logo_final.png "Logo")
 
 # Portfolio Website
 
