@@ -10,4 +10,4 @@ const config = {
     // database: "db_portfolio"
 }
 
-module.exports = config;
+module.exports = config
