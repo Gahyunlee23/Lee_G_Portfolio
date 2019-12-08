@@ -1,4 +1,4 @@
-![Portfolio_logo](images/logo_final.png)
+![Portfolio_logo](/images/logo_final.png)
 
 # Portfolio Website
 
