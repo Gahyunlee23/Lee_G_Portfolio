@@ -4,12 +4,6 @@
     //header
     .homeText { font-size: 2rem; }
 
-    //about Section Start Here
-    .about { 
-        display: flex;
-        flex-direction: row;
-    }
-
     #mainNav {
         display: flex;
         flex-direction: column;
@@ -49,13 +43,23 @@
       #mainNav li:last-child { margin-bottom: 10px; }
       
       #mainNav li a:hover { background-color: $theme-yellow; }
+
+       //about Section Start Here
+    .about { 
+      display: flex;
+      flex-direction: row;
+      p { width: 500px; }
+    }
+
      
-    // Works Section Starts Here
+    // Works Section 
 
     .works-panel { flex: 0 1 350px; }
 
     .contact-img { display: block; }
     
+
+    //Footer Section
     #contact { 
       background-image: none;
       display: flex;

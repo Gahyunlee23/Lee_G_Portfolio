@@ -21,8 +21,7 @@
     }
 
     function parseProject(project) {
-        let targetDiv = lightBox.querySelector('.lb-content'),
-            targetImg = lightBox.querySelector('img');
+        let targetDiv = lightBox.querySelector('.lb-content');
 
         let projectDetails = `
             <img class="thumb-img" src="images/${project.Image}">
@@ -66,7 +65,7 @@
         aboutImg.src = "images/aboutCasualGa.png";
     }
 
-    function changeAboutIng() { 
+    function returnImg() { 
         aboutImg.src = "images/aboutGahyun.jpg";
     }
 
@@ -79,6 +78,6 @@
     button.addEventListener("click", hamburgerMenu, false);
 
     aboutImg.addEventListener("mouseover", changeAboutImg);
-    aboutImg.addEventListener("mouseout", changeAboutIng);
+    aboutImg.addEventListener("mouseout", returnImg);
     
 })();

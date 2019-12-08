@@ -14,7 +14,7 @@
     <input id="name" type="text" name="name" placeholder="name">
     
     <label for="email">Email</label>
-    <input id="email" type="email" name="email" required pattern=".+@globex.com" placeholder="email">
+    <input id="email" type="email" name="email" placeholder="email">
 
     <label for="subject">Subject</label>
     <input id="subject" type="text" name="subject" placeholder="subject">

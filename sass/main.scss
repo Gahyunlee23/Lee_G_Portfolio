@@ -7,6 +7,8 @@ h1, h2, h3, h4, h5, h6, p, span {
     font-weight: 100;
 }
 
+video { max-width: 100%; }
+
 *,
 *::before,
 *::after {
@@ -74,22 +76,29 @@ h1, h2, h3, h4, h5, h6, p, span {
   #mainNav li a:hover { background-color: $theme-yellow; }
 
   // About Section
-  .about {  
-      position: relative;
-      z-index: -1;
 
-      p {
-          width: 280px;
-          font-size: 1rem;
-          margin-top: 100px;
-          z-index: 5000;
-      }
-    }
+.about {  
+    position: relative;
+    z-index: -1;
+}
+
+.aboutT { 
+    margin: 100px 0 50px 0; 
+    text-align: center;
+    font-size: 2rem;
+}
+
+.aboutMe {
+    margin: 50px 10px 0 10px;
+}
+
 
 // Works Section
+
 .title {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #works { margin-top: 100px; }
@@ -103,23 +112,26 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .works-panel {
     flex: 0 1 100%;
+    margin-bottom: 75px;
+    position: relative;
+    
     img { max-width: 100%; }
 }
+
+.w-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+video { margin-bottom: 100px; }
 
 @keyframes bounce {
     from { transform: translate3d(0, 0, 0);}
     to   { transform: translate3d(0, 200px, 0); }
 }
 
-.project {
-    width: 366px;
-    height: 385px;
-}
 
-.project-p {
-    width: 366px;
-    height: 385px;
-}
+//Contact Section
 
 .contact-img { display: none; }
 
@@ -155,7 +167,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     }
 }
 
-//footer starts here 
+//Footer Section
 .mainFooter {
     background-color: $theme-middleP;
     margin-top: 100px;
@@ -170,6 +182,29 @@ h1, h2, h3, h4, h5, h6, p, span {
     left: 1;
 }
 
+.lb-content {
+    width: 340px;
+    li {
+        font-family: nudista-web, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        width: 70px;
+        padding: 10px;
+        margin-bottom: 4px; 
+        background-color: $theme-yellow;
+    }
+    
+    li:hover { background-color: $theme-lightP }
+}
+
+.submitBut {
+    width: 70px;
+    height: 30px;
+    background-color: $theme-middleP;
+    padding: 7px;
+    margin: 10px 10px;
+    font-size: 20px;
+}
 
 @import 'modules/tablet';
 @import 'modules/desktop';
