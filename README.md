@@ -4,9 +4,7 @@
 
 ## Description
 
-This project is making protfolio website. To host actual website online I used node.js/heroku.
-
-## Getting Started
+This project is making protfolio website for future career. I used node.js and pick the heroku as my hoting site. 
 
 ### Dependencies
 <!-- * Describe any prerequisites, libraries, OS version, etc., needed before installing program. -->
@@ -31,7 +29,6 @@ This project is making protfolio website. To host actual website online I used n
 
 Contributors names and contact info
 
-
 * [Gahyun(Stella) Lee](g_lee89360@fanshaweonline.ca)
 
 ## License
@@ -48,7 +45,7 @@ Contributors names and contact info
 
 * Stock Music
 	* [Above the Clouds](https://www.free-stock-music.com/fm-freemusic-above-the-clouds.html)
-  * [Ben Sound](https://www.bensound.com/)
+  	* [Ben Sound](https://www.bensound.com/)
   
   
   
