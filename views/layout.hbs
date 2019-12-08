@@ -27,21 +27,29 @@
       <h1 class="homeText">Come Out to New Experiences!</h1>
     </header>
 
-    <h1 class="title">About Me</h1>
+    <h1 class="aboutT">About Me</h1>
     <section class="about">
        <img class="about-img" src="images/aboutGahyun.jpg" alt="formal">
-      <p>I’m currently studying in the interactive media design at Fanshawe. 
-        I went through many group projects; I have done mostly coding on the group. 
-        I like to work with computer. 
-        When I’m not coding, I usually watch Netflix and read some books. If the weather is good, then I go out and take a walk around the home.</p>
+   
+      <p class="aboutMe">
+        I have been an interactive media design program at Fanshawe College. 
+        Through many projects, I found an interest in coding. 
+        I usually do the code job in most of the group projects; I improve my coding skills from those. 
+        I would work as a developer once I finish this course.
+        <br><br>
+        I am always with my laptop even I'm not coding. 
+        I like to browse some useful websites and finding design references. </p>
     </section>
     
     <section id="works">
       <h1 class="title">Featured Works</h1>
 
         {{{ body }}}
-      <video src="images/demo-reel.mp4"></video>
-      <video src="images/demo-reel.ogg"></video>
+      <video controls> 
+        <source src="/images/demo-reel.mp4" type="video/mp4">
+        <source src="/images/demo-reel.ogg" type="video/ogg">
+        <source src="/images/demo-reel.webm" type="video/webm">
+      </video> 
     </section>
 
 
@@ -69,7 +77,7 @@
       <textarea id="message" name="message"></textarea>
       </div>
 
-      <button type="submit">Submit</button>
+      <button class="submitBut" type="submit">Submit</button>
      </form>
     </section>
 

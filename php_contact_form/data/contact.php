@@ -1,7 +1,7 @@
 <?php
 
 if(empty($_POST['email'])) {
-    echo 'No..';
+    echo 'You forget to put your email there!';
     exit;
 }
 
@@ -50,10 +50,9 @@ $headers = array(
 );
 
 if(mail($recipient, $subject, $message, $headers)) {
-    echo '<p> Thank you contacting us, '.$name.'</p>'; 
+    echo '<p> Thank you contacting us, '.$name.' </p>'; 
 } else {
     echo '<p> We are sorry but eamil did not go through</p>';
-    redirectHome($url);
 }
 
 //redirect to home page try here
