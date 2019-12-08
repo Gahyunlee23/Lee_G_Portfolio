@@ -1,5 +1,4 @@
-![Portfolio_logo](public/images/logo_final.png)
-<!-- Format: ![Terra Studios Logo Header] -->
+![Portfolio_logo](images/logo_final.png)
 
 # Portfolio Website
 
