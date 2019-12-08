@@ -1,4 +1,4 @@
-![MyLogoImage](public/images/logo_final.png "Logo")
+![MyLogoImage](public/images/logo_final_blackT.svg "Logo")
 
 # Portfolio Website
 
