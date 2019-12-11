@@ -2,9 +2,9 @@
 @import 'modules/lightbox';
 
 h1, h2, h3, h4, h5, h6, p, span {
-    font-family: nudista-web, sans-serif;
+    font-family: futura-pt, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 video { max-width: 100%; }
@@ -76,29 +76,53 @@ video { max-width: 100%; }
   #mainNav li a:hover { background-color: $theme-yellow; }
 
   // About Section
-
-.about {  
-    position: relative;
-    z-index: -1;
-}
-
 .aboutT { 
     margin: 100px 0 50px 0; 
     text-align: center;
     font-size: 2rem;
 }
 
-.aboutMe {
-    margin: 50px 10px 0 10px;
+#keywords {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-bottom: 100px;
+
+    font-family: verveine, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
 }
+
+
+
+.imgCon {
+    width: 650px;
+	height: 435px;
+	background-color: grey;
+	margin:0 auto;
+    overflow: hidden;
+  }
+
+#keyImages {
+    position: relative;
+    width: 2600px; 
+    transition: all .5s;
+}
+
+#keyImages img { float: left; }
 
 
 // Works Section
 
 .title {
     font-size: 2rem;
+    font-weight: 600; 
+
     text-align: center;
-    margin-bottom: 50px;
+    margin: 150px 0 50px 0;;
+
 }
 
 #works { margin-top: 100px; }
@@ -138,7 +162,6 @@ video { margin-bottom: 100px; }
 #contact {
     width: 374px;
     height: 499px;
-    background-image: url("../images/contact-image.png")
 }
 
 #contact {
@@ -171,23 +194,25 @@ video { margin-bottom: 100px; }
 .mainFooter {
     background-color: $theme-middleP;
     margin-top: 100px;
+
     img { 
-        width: 50px; 
+        width: 25px; 
         padding-left: 15px;
     }
 }
 
 #to-top { 
-    display: inline-block;
-    left: 1;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 10px;
 }
 
 .lb-content {
     width: 340px;
     li {
-        font-family: nudista-web, sans-serif;
+        font-family: futura-pt, sans-serif;
         font-style: normal;
-        font-weight: 100;
+        font-weight: 300;
         width: 70px;
         padding: 10px;
         margin-bottom: 4px; 

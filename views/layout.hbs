@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/ans6mvt.css">
 
-  <title>Welcome to Stella's Portfolio</title>s
+  <title>Welcome to Stella's Portfolio</title>
 </head>
 <body>
   <main class="wrapper">
@@ -28,20 +28,27 @@
       <h1 class="homeText">Come Out to New Experiences!</h1>
     </header>
 
+
+<section class="about">
     <h1 class="aboutT">About Me</h1>
-    <section class="about">
-       <img class="about-img" src="images/aboutGahyun.jpg" alt="formal">
-   
-      <p class="aboutMe">
-        I have been an interactive media design program at Fanshawe College. 
-        Through many projects, I found an interest in coding. 
-        I usually do the code job in most of the group projects; I improve my coding skills from those. 
-        I would work as a developer once I finish this course.
-        <br><br>
-        I am always with my laptop even I'm not coding. 
-        I like to browse some useful websites and finding design references. </p>
+
+       <ul id="keywords">
+         <li><div class="keyCon crazy" data-offset="0">#Crazy</div></li>
+         <li><div class="keyCon korea" data-offset="1">#Korea</div></li>
+         <li><div class="keyCon adventure" data-offset="2">#Adventure</div></li>
+         <li><div class="keyCon honesty" data-offset="3">#Honesty</div></li>
+       </ul>
+
+       <section class="imgCon">
+       <div id="keyImages" style="right: 0;">
+         <img src="images/about-crazy.png"/>
+         <img src="images/about-korea.png"/>
+         <img src="images/about-adventure.png"/>
+         <img src="images/about-honesty.png"/>
+       </div>
     </section>
-    
+
+    </section>
     <section id="works">
       <h1 class="title">Featured Works</h1>
 
@@ -56,7 +63,7 @@
 
     <h2 class="title">Get in Touch!</h2>
     <section id="contact">
-      <img class="contact-img" src="images/contact-image.png" alt="contact-img">
+      
       <form action="data/contact.php" method="post"> 
       <div class="cName">
       <label for="name">Name</label>

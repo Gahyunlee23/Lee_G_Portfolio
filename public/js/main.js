@@ -1,8 +1,9 @@
 (() => {
-    let button = document.querySelector("#button");
-    let burgerCon = document.querySelector("#burgerCon");
-    let aboutImg = document.querySelector('.about-img');
+    let button = document.querySelector('#button');
+    let burgerCon = document.querySelector('#burgerCon');
 
+    let keyImg = document.querySelector('#keyImages'),
+        keywords = document.querySelectorAll('.keyCon');
 
     function hamburgerMenu() {
         burgerCon.classList.toggle("slideToggle");
@@ -61,13 +62,17 @@
             .catch(err => console.log(err));
     }
 
-    function changeAboutImg() {
-        aboutImg.src = "images/aboutCasualGa.png";
+
+    function animateKeyImg() {
+        let offset = 650,
+            multiplier = this.dataset.offset
+
+        console.log((offset+multiplier) + "px");
+
+        keyImg.style.right = `${offset * multiplier + "px"}`;
     }
 
-    function returnImg() { 
-        aboutImg.src = "images/aboutGahyun.jpg";
-    }
+    keywords.forEach(keyword => keyword.addEventListener("click", animateKeyImg));
 
     userButtons.forEach(button => button.addEventListener("click", getProjectInfo));
 
