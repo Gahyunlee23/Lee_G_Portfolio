@@ -1,63 +1,60 @@
 @import '_vars';
 
 @media screen and (min-width: $bp-tablet) {
-    //header
-    .homeText { font-size: 2rem; }
-
-    #mainNav {
-        display: flex;
-        flex-direction: column;
-      }
+  // Header section
+  .homeText { font-size: 2rem; }
+  
+  //Nav Section
+  #mainNav {
+    display: flex;
+    flex-direction: column;
+  }
     
-    #burgerCon {
-        display: none;
-        margin-top: 5px;
-      }
+  #burgerCon {
+    display: none;
+    margin-top: 5px;
+  }
       
-    #burgerCon.slideToggle { display: block; }
+  #burgerCon.slideToggle { display: block; }
     
-    #mainNav button {
-        background: url(../images/burgerCon.svg);
-        border: 0;
-        width: 35px;
-        height: 35px;
-        transition: all 400ms ease;
-        margin: 10px 10px 0 auto;
-      }
+  #mainNav button {
+    background: url(../images/burgerCon.svg);
+    border: 0;
+    width: 35px;
+    height: 35px;
+    transition: all 400ms ease;
+    margin: 10px 10px 0 auto;
+  }
+  
+  #mainNav li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
       
-      #mainNav button.expanded {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
+  #mainNav li:last-child { margin-bottom: 10px; }
       
-        transform: rotate(90deg);
-      }
-      
-      #mainNav li a {
-          text-decoration: none;
-          display: block;
-          color: #fff;
-          padding: 10px 0;
-          text-align: center;
-      }
-      
-      #mainNav li:last-child { margin-bottom: 10px; }
-      
-      #mainNav li a:hover { background-color: $theme-yellow; }
+  #mainNav li a:hover { background-color: $theme-yellow; }
 
  // About Section
-      #keywords { font-size: 2rem; }
-     
-    // Works Section 
+ #keywords { 
+   font-size: 2rem; 
+   li:hover { background-color: #f9aaae; }
+ }
 
-    .works-panel { flex: 0 1 350px; }
+ // Works Section 
+  .works-panel { flex: 0 1 350px; }
 
-    .contact-img { display: block; }
-    
-
-    //Footer Section
-    #contact { 
-      background-image: none;
-      display: flex;
-      flex-direction: row;
-    }
+  .contact-img { display: block; }
+  
+  // sFooter Section
+  #contact { 
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mainFooter img { width: 50px; }
 }

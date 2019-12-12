@@ -95,8 +95,6 @@ video { max-width: 100%; }
 
 }
 
-
-
 .imgCon {
     width: 650px;
 	height: 435px;
@@ -115,14 +113,12 @@ video { max-width: 100%; }
 
 
 // Works Section
-
 .title {
     font-size: 2rem;
     font-weight: 600; 
 
     text-align: center;
     margin: 150px 0 50px 0;;
-
 }
 
 #works { margin-top: 100px; }
@@ -142,17 +138,25 @@ video { max-width: 100%; }
     img { max-width: 100%; }
 }
 
+.lb-content {
+    li {
+        display: inline-block;
+        padding: 3px;
+        margin: 5px; 
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+
+        background-color: $theme-yellow;
+    }
+}
+
 .w-title {
     font-size: 1.5rem;
     text-align: center;
 }
 
 video { margin-bottom: 100px; }
-
-@keyframes bounce {
-    from { transform: translate3d(0, 0, 0);}
-    to   { transform: translate3d(0, 200px, 0); }
-}
 
 
 //Contact Section
@@ -205,21 +209,6 @@ video { margin-bottom: 100px; }
     display: flex;
     justify-content: flex-end; 
     margin-right: 10px;
-}
-
-.lb-content {
-    width: 340px;
-    li {
-        font-family: futura-pt, sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        width: 70px;
-        padding: 10px;
-        margin-bottom: 4px; 
-        background-color: $theme-yellow;
-    }
-    
-    li:hover { background-color: $theme-lightP }
 }
 
 .submitBut {
