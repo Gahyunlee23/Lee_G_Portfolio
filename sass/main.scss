@@ -1,13 +1,18 @@
-@import '_vars';
+@import 'vars';
 @import 'modules/lightbox';
+@import 'modules/error';s
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, input, textarea {
     font-family: futura-pt, sans-serif;
     font-style: normal;
     font-weight: 300;
 }
 
-video { max-width: 100%; }
+video { 
+    max-width: 70%; 
+    display: block;
+    margin: 0 auto;
+}
 
 *,
 *::before,
@@ -24,12 +29,18 @@ video { max-width: 100%; }
     height: 234px;
 }
 
-#headerLogo { width: 86px; }
+#headerLogo { 
+    width: 100px; 
+    margin-left: 50px;
+}
 
 .homeText { 
-    font-size: 1.2rem;; 
-    color: white;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
     font-weight: 600;
+    font-size: 1.2rem;
+
+    color: white;
     text-align: center;
 }
 
@@ -62,7 +73,13 @@ video { max-width: 100%; }
   
     transform: rotate(90deg);
   }
-  
+
+  #mainNav li { 
+      font-family: futura-pt, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+  }
+
   #mainNav li a {
       text-decoration: none;
       display: block;
@@ -79,6 +96,10 @@ video { max-width: 100%; }
 .aboutT { 
     margin: 100px 0 50px 0; 
     text-align: center;
+
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 2rem;
 }
 
@@ -114,7 +135,9 @@ video { max-width: 100%; }
 
 // Works Section
 .title {
-    font-size: 2rem;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-size: 2.5rem;
     font-weight: 600; 
 
     text-align: center;
@@ -138,6 +161,12 @@ video { max-width: 100%; }
     img { max-width: 100%; }
 }
 
+.works-panel:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 .lb-content {
     li {
         display: inline-block;
@@ -156,9 +185,6 @@ video { max-width: 100%; }
     text-align: center;
 }
 
-video { margin-bottom: 100px; }
-
-
 //Contact Section
 
 .contact-img { display: none; }
@@ -170,7 +196,8 @@ video { margin-bottom: 100px; }
 
 #contact {
     margin: 0 auto;
-    justify-content:  space-evenly;
+    justify-content: space-evenly;
+
     label {
         font-size: 1.5rem;
         font-family: nudista-web, sans-serif;
@@ -178,14 +205,18 @@ video { margin-bottom: 100px; }
         font-weight: 100;
         padding-left: 7px;
     }
+
     input {
+        font-size: 1.3rem;
         background-color: $theme-lightP;
         border: none;
         width: 355px;
         height: 60px;
         margin: 7px;
     }
+
     textarea {
+        font-size: 1rem;
         background-color: $theme-lightP;
         border: none;
         width: 355px;
@@ -194,30 +225,52 @@ video { margin-bottom: 100px; }
     }
 }
 
+.submitBut {
+    font-size: 20px;
+    
+    width: 70px;
+    height: 30px;
+    padding: 7px;
+    margin: 20px 10px;
+    border: none;
+
+    background-color: $theme-middleP;
+}
+
+button:hover { background-color: $theme-yellow; }
+
 //Footer Section
 .mainFooter {
     background-color: $theme-middleP;
     margin-top: 100px;
 
     img { 
-        width: 25px; 
-        padding-left: 15px;
+        width: 30px;
+        background-color: #fff;
+        margin: 5px 0 0 5px;
     }
 }
 
 #to-top { 
+    color: #fff;
+    text-decoration: none;
     display: flex;
     justify-content: flex-end; 
     margin-right: 10px;
 }
 
-.submitBut {
-    width: 70px;
-    height: 30px;
-    background-color: $theme-middleP;
-    padding: 7px;
-    margin: 10px 10px;
-    font-size: 20px;
+// Error Page
+
+.error-h {
+    font-family: marydale, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.error-t {
+    font-family: marydale, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @import 'modules/tablet';

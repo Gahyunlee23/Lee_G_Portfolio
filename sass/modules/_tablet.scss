@@ -16,15 +16,7 @@
   }
       
   #burgerCon.slideToggle { display: block; }
-    
-  #mainNav button {
-    background: url(../images/burgerCon.svg);
-    border: 0;
-    width: 35px;
-    height: 35px;
-    transition: all 400ms ease;
-    margin: 10px 10px 0 auto;
-  }
+
   
   #mainNav li a {
     text-decoration: none;
@@ -36,7 +28,10 @@
       
   #mainNav li:last-child { margin-bottom: 10px; }
       
-  #mainNav li a:hover { background-color: $theme-yellow; }
+  #mainNav li a:hover { 
+    background-color: $theme-yellow; 
+    color: #000;
+  }
 
  // About Section
  #keywords { 
