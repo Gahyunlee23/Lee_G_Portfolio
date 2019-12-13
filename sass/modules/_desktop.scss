@@ -9,7 +9,10 @@
     height: 480px;
   }
 
-  .homeText { text-align: center; }
+  .homeText { 
+    font-size: 2.5rem;
+    text-align: center; 
+  }
 
   #headerLogo { width: 200px; }
 
@@ -31,6 +34,8 @@
   #mainNav li {
     border-bottom: none;
     display: inline-block;
+    margin-top: 20px;
+
   }
 
   #mainNav li a {
@@ -43,7 +48,8 @@
   }
 
   #mainNav li a:hover {
-    color: #fff;
+    color: #000;
+    font-weight: 600;
     background-color: $theme-yellow;
     padding: 25px 15;
   }
@@ -66,8 +72,48 @@
     height: 930px;
   }
 
+  #contact {
+    width: 750px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+    label {
+        font-size: 2rem;
+        font-family: nudista-web, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        padding-left: 14px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        background-color: $theme-lightP;
+        font-size: 1.5rem;
+        border: none;
+        width: 750px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
+    textarea {
+        background-color: $theme-lightP;
+        border: none;
+        width: 750px;
+        height: 90px;
+        margin-left: 7px;
+    }
+  }
+
+  .submitBut {
+    width: 100px;
+    height: 50px;
+
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
   //Footer Section
-  
+  .mainFooter { margin-top: 200px; }
 }
 
 //Media query around 1280px
@@ -76,6 +122,7 @@
     width: 1280px;
     margin: 0 auto;
   }
+  
   .mainHeader {
     background-image: url("../images/homeIntro.png");
     width: 1280px;
