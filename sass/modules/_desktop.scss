@@ -63,7 +63,11 @@
   // Work Section
   .project { max-width: 365px; }
 
-  .lb-content { max-width: 800px; }
+  .lb-content { 
+    img { width: 300px; }
+    width: 650px;
+    font-size: 2rem;
+  }
 
 
   //Contact Section
@@ -133,5 +137,11 @@
     font-size: 4rem; 
     text-align: center;
     margin-top: 70px; 
+  }
+
+  .lb-content { 
+    img { width: 300px; }
+    width: 850px;
+    font-size: 1.5rem;
   }
 }
