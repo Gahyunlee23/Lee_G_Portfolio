@@ -15,6 +15,7 @@
 <body>
   <main class="wrapper">
     <header class="mainHeader">
+      <div class="logoCon">
         <nav id="mainNav">
           <button id="button"></button>
           <div id="burgerCon">
@@ -25,12 +26,16 @@
         </nav>
       </div>
       <img id="headerLogo" src="images/logo-horizon-whiteT.svg" alt="logo"> 
+      </div>
       <h1 class="homeText">Come Out to New Experiences!</h1>
     </header>
 
 
 <section class="about">
+
+  <div class="titleBox-o">
     <h1 class="aboutT">About Me</h1>
+  </div>
 
        <ul id="keywords">
          <li><div class="keyCon crazy" data-offset="0">#Crazy</div></li>
@@ -50,9 +55,12 @@
 
     </section>
     <section id="works">
-      <h1 class="title">Featured Works</h1>
-
+      <div class="titleBox">
+        <h1 class="title">Featured Works</h1>
+      </div>
+        
         {{{ body }}}
+      
       <video controls> 
         <source src="/images/demo-reel.mp4" type="video/mp4">
         <source src="/images/demo-reel.ogg" type="video/ogg">
@@ -60,8 +68,10 @@
       </video> 
     </section>
 
-
+    <div class="titleBox">
     <h2 class="title">Get in Touch</h2>
+    </div>
+
     <section id="contact">
       
       <form action="data/contact.php" method="post"> 

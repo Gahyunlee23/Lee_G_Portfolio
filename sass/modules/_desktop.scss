@@ -19,6 +19,7 @@
   #mainHeader { display: flex; margin-top: 20px; }
 
   //Nav Section
+
   #button { display: none; }
 
   #burgerCon { display: flex; flex-direction: column; margin: 0; }
@@ -63,10 +64,18 @@
   // Work Section
   .project { max-width: 365px; }
 
+  .works-panel:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    
+    transform: scale(1.3);
+  }
+
   .lb-content { 
     img { width: 300px; }
     width: 650px;
-    font-size: 2rem;
+
+    font-size: 1.2rem;
   }
 
 
@@ -77,7 +86,7 @@
   }
 
   #contact {
-    width: 750px;
+    width: 700px;
     margin: 0 auto;
     justify-content: space-evenly;
 
@@ -94,26 +103,24 @@
         background-color: $theme-lightP;
         font-size: 1.5rem;
         border: none;
-        width: 750px;
-        height: 70px;
-        margin-bottom: 10px;
+        width: 700px;
+        height: 60px;
+        margin-bottom: 30px;
     }
     
     textarea {
         background-color: $theme-lightP;
         border: none;
-        width: 750px;
+        width: 700px;
         height: 90px;
-        margin-left: 7px;
+        margin: 10px 0 0 14px;
     }
   }
 
   .submitBut {
-    width: 100px;
-    height: 50px;
-
     color: #fff;
     font-size: 1.5rem;
+    padding: 12px 14px;
   }
 
   //Footer Section
@@ -141,7 +148,7 @@
 
   .lb-content { 
     img { width: 300px; }
+
     width: 850px;
-    font-size: 1.5rem;
   }
 }

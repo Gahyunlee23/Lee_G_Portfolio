@@ -26,14 +26,14 @@
 
         let projectDetails = `
             <img class="thumb-img" src="images/${project.Image}">
-            <h4>Tools: </h4>
+            <h3>Tools: </h3>
             ${renderProject(project.Tools)}<br>
 
-            <h2>Category: </h2>
-            <h3>${project.Category}</h3><br>
+            <h3>Category: </h3>
+            <p>${project.Category}</p><br>
             <h3>Description: </h3>
-            <h3>${project.Description}</h3><br>
-            <p>What I learned...</p>
+            <p>${project.Description}</p><br>
+            <h3>What I learned?</h3>
             <p>${project.Learned}</p>
 
         `;

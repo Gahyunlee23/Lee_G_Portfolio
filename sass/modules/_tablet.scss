@@ -26,7 +26,9 @@
     text-align: center;
   }
       
-  #mainNav li:last-child { margin-bottom: 10px; }
+  #mainNav li:last-child { 
+    margin-right: 15px; 
+  }
       
   #mainNav li a:hover { 
     background-color: $theme-yellow; 
@@ -36,19 +38,31 @@
  // About Section
  #keywords { 
    font-size: 2rem; 
+
    li:hover { background-color: #f9aaae; }
  }
 
- // Works Section 
-  .works-panel { flex: 0 1 350px; }
+ .aboutT { font-size: 2.5rem; }
 
-  .contact-img { display: block; }
+ .titleBox-o { margin: 150px auto 100px auto; }
+
+ // Works Section 
+
+ .title { font-size: 2.5rem; }
+
+ .titleBox { 
+   margin: 150px auto 100px auto; 
+   width: 360px; 
+ }
+
+ .works-panel { flex: 0 1 350px; }
+
+ .contact-img { display: block; }
   
   // sFooter Section
   #contact { 
     background-image: none;
     display: flex;
-    flex-direction: row;
   }
   
   .mainFooter img { width: 50px; }
